@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+	ServerName phppartie2exo4
+	ServerAlias phppartie2exo4.info
+	DocumentRoot " systemctl reload apache2
+"
+	<Directory "/home/audray/www/audrayprojet">
+		Options FollowSymLinks
+		AllowOverride all
+		Require all granted
+	</Directory>
+	ErrorLog /var/log/apache2/error.phppartie2exo4.log
+	CustomLog /var/log/apache2/access.phppartie2exo4.log combined
+</VirtualHost>
+
